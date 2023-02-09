@@ -6,10 +6,12 @@ from uuid import uuid4
 
 
 class BaseModel:
-    """Represents the base class for all data sets.
+    """
+    Represents the base class for all data sets.
     """
     def __init__(self, *args, **kwargs):
-        """Initializes a new instance of the BaseModel.
+        """
+        Initializes a new instance of the BaseModel.
 
         Args:
             *args (tuple): Ignored.
@@ -31,7 +33,8 @@ class BaseModel:
             storage.new(self)
 
     def __str__(self):
-        """Creates a string representation of a BaseModel instance.
+        """
+        Creates a string representation of a BaseModel instance.
 
         Returns:
             str: A string representation of a BaseModel instance.
@@ -44,14 +47,16 @@ class BaseModel:
         return res
 
     def save(self):
-        """Saves the changes made to this BaseModel instance.
+        """
+        Saves the changes made to this BaseModel instance.
         """
         from models import storage
         self.updated_at = datetime.now()
         storage.save()
 
     def to_dict(self):
-        """Returns a dictionary consisting of this BaseModel instance's
+        """
+        Returns a dictionary consisting of this BaseModel instance's
         attibute keys and values.
 
         Returns: A dictionary of the attribute key-value pairs.
