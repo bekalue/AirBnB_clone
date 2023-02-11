@@ -16,6 +16,7 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
+
 class HBNBCommand(cmd.Cmd):
     '''
     Contains the entry point of the command interpreter.
@@ -38,9 +39,11 @@ class HBNBCommand(cmd.Cmd):
             Exits after receiving the EOF signal.
         '''
         return True
+
     def do_create(self, args):
         '''
-        Creates a new instance of class BaseModel and saves it to the JSON file.
+        Creates a new instance of class BaseModel
+        and saves it to the JSON file.
         '''
 
         if len(args) == 0:
@@ -52,8 +55,9 @@ class HBNBCommand(cmd.Cmd):
             new_instance.save()
             print(new_instance.id)
 
-        except:
+        except Exception:
             print("** class doesn't exist **")
+
     def do_show(self, args):
         '''
             Print the string representation of an instance baed on
@@ -81,6 +85,7 @@ class HBNBCommand(cmd.Cmd):
             print(value)
         except KeyError:
             print("** no instance found **")
+
     def do_destroy(self, args):
         '''
             Deletes an instance based on the class name and id.
@@ -243,7 +248,7 @@ class HBNBCommand(cmd.Cmd):
             cmd_arg = args[0] + " " + args[2]
             func = functions[args[1]]
             func(cmd_arg)
-        except:
+        except Exception:
             print("*** Unknown syntax:", args[0])
 
 
