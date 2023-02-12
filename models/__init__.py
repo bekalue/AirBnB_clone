@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Modules for working with data sets.
 """
-import file_storage.py
 from models.engine.file_storage import FileStorage
 
 
