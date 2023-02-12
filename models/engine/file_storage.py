@@ -67,4 +67,3 @@ class FileStorage:
                 if cls_name in classes.keys():
                     base_model_objs[key] = classes[cls_name](**value)
             self.__objects = base_model_objs
-            
