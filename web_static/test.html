@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid-template</title>
+        <style>
+            body {
+                background-color: antiquewhite;
+            }
+            #myDIV {
+                height: 300px;
+                display: grid;
+                grid-template-columns: auto auto
+                auto;
+                gap: 10px;
+                background-color:burlywood;
+                padding: 10px;
+                grid-template-rows: 50px 100px
+            }
+            #myDIV div {
+                background-color: aqua;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 20px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1> the grid-template rows property</h1>
+        <div id="myDIV">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+        </div>
+    </body>
+</html>
