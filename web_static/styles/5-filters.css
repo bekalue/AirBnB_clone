@@ -1,0 +1,40 @@
+.filters {
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	width: 100%;
+	height: 70px;
+	border-radius: 4px;
+}
+.locations{
+	border-right: 1px solid #DDDDDD;
+}
+.locations, .amenities {
+	display: inline-block;
+	align-items: center;
+	height: 100%;
+	width: 25%;
+	margin-left: 45px;
+}
+.filters h3 {
+	font-weight: 600;
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+.filters h4 {
+	font-weight: 400;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 12px;
+}
+
+.filters button {
+	color: #FFFFFF;
+	background-color: #FF5A5F;
+	float: right;
+	border: none;
+	border-radius: 4px;
+	height: 48px;
+	width: 20%;
+	font-size: 18px;
+	margin: 11px 30px;
+}
